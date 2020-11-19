@@ -256,41 +256,7 @@
 		<aside id="fh5co-hero" class="js-fullheight">
 			<div class="flexslider js-fullheight">
 				<ul class="slides">
-                   <li style="background-image: url({% static 'images/slide_1.jpg' %});">
-                    <!-- <div class="main"> -->
-                        <div style='text-align: center; font-size: 30px;color:white' class="d1"></div>
-                        <div class="d2"></div>
-                        <!-- </div> -->
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span>Power by Enthusiasm & Driven with Passion</span><br/>
-			   						<h2>Welcome to ColonHash!</h2>
-			   						<p>We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
-			   					</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({% static 'images/slide_2.jpg' %});">
-                    <div style='text-align: center; font-size: 30px;color:white' class="d5"></div>
-                        <div class="d2"></div>   
-                    <div class="overlay-gradient"></div>
-			   		<div class="container">
-			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
-			   				<div class="slider-text-inner">
-			   					<div class="desc">
-			   						<span>Power by Enthusiasm & Driven with Passion</span>
-				   					<h2>Our values are our strength</h2>
-				   					<p>We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
-
-				   				</div>
-			   				</div>
-			   			</div>
-			   		</div>
-			   	</li>
+                   
 			   	<li style="background-image: url({% static 'images/slide_3.jpg' %});">
                     <div class="d6"></div>   
                     <div class="overlay-gradient"></div>
@@ -299,8 +265,8 @@
 			   				<div class="slider-text-inner">
 			   					<div class="desc">
 			   						<span>Power by Enthusiasm & Driven with Passion</span>
-				   					<h2>Make Your Business Digital</h2>
-				   					<p>We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
+				   					<h2>What we offer?</h2>
+				   					<p>We possess a highly professional team that will provide you the best packages for your needs!</p>
 				   				</div>
 			   				</div>
 			   			</div>
@@ -309,90 +275,6 @@
 			  	</ul>
 		  	</div>
 		</aside>
-		<div id="fh5co-intro-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 animate-box text-center">
-						<h2 class="intro-heading">We named it ColonHash!</h2>
-						<p><span>Bringing ideas to life <i class="icon-heart3"></i> </span></p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="fh5co-featured">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="post-entry">
-						<div class="col-md-6 col-md-push-6 nopaddingbottom animate-box">
-							<div class="post-image" style="background-image: url({% static 'images/about.png' %});"></div>
-						</div>
-						<div class="col-md-6 col-md-pull-5 animate-box">
-							<div class="display-tc">
-								<div class="desc">
-									<span class="date">About us</span>
-									<h3>We are ColonHash!</h3><span class="date">Where you find perfect software solutions for your needs.</span>
-                                    <p>Colonhash, software development company based in Finland founded in Januarary, 2020. Carrying a motive to present our best services to entrepreneurs, startups, SMEs & Co-operates and providing ease to their businesses with our expertise. We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-{% block services %}
-		<div id="fh5co-about" >
-			<div class="container" >
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>What We Offer</h2>
-						<p>We have a motive to offer the best services!</p>
-					</div>
-				</div>
-				<div class="row">
-					{% for service in services %}
-					<div class="col-sm-3 animate-box" data-animate-effect="fadeIn">
-						<div class="fh5co-staff">
-							<img class="img-responsive" src="{{ service.picture.url }}" alt="ColonHash">
-							<h3>{{ service.name }}</h3>
-							<strong class="role">{{ service.included }}</strong>
-							<p><a href="{% url 'servicedetail' service.id %}#booked"><button style='background-color: #00008b;color:white;' >Hire us</button></a>  <a href="{% url 'servicedetail' service.id %}"><button style='background-color: #00008b;color:white;' >Details</button></a></p>
-						</div>
-					</div>
-					{% endfor %}
-					<center><a href="{% url 'services' %}"><button style='background-color: #00008b;color:white;'>See All Services</button></a></center>
-				</div>
-			</div>
-		</div>
-		{% endblock services %}
-		<div id="fh5co-blog" class="fh5co-bg-section">
-			<div class="container">
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Products and Packages</h2>
-						<p>We offer the best quality Products and softwares that boosts your business!</p>
-					</div>
-				</div>
-				<div class="row">
-					{% for product in products %}
-					<div class="col-md-4">
-						<div class="fh5co-blog animate-box">
-							<a href="#"><img class="img-responsive" src="{{ product.picture.url }}" alt=""></a>
-							<div class="blog-text">
-								<span class="posted_on">PRICE: {{ product.Pricing }}</span>
-								<span class="comment"><a href="">21<i class="icon-bubble"></i></a></span>
-								<h3><a href="#">{{ product.name }}</a></h3>
-								<p>{{ product.description }}</p>
-                                <p><a href="{% url 'productdetail' product.id %}"><button style='background-color: #00008b;color:white;' >Buy Now</button></a>  <a href="{{ product.Demo_link }}"><button style='background-color: #00008b;color:white;' >Demo</button></a></p>
-							</div> 
-						</div>
-					</div>
-					{% endfor %}
-					<center><a href="{% url 'products' %}"><button style='background-color: #00008b;color:white;'>See All Products</button></a></center>
-
-				</div>
-			</div>
-		</div>
 
 		<div id="fh5co-work-section" style="background-image: url({% static 'images/back.png' %});background-size:cover">
 			<div class="container" >
@@ -414,8 +296,7 @@
 						</div>
 					</div>
 					{% endfor %}
-					<center><a href="{% url 'packages' %}"><button style='background-color: #00008b;color:white;'>See All Packages</button></a></center>
-
+					
 				</div>
 			</div>
 		</div>
@@ -467,14 +348,14 @@
 						<div class="col-md-3 col-md-push-1">
 							<h3 class="section-title">Links</h3>
 							<ul>
-								<li><a href="{% url 'index' %}">Home</a></li>
-								<li><a href="{% url 'about' %}">About us</a></li>
-								<li><a href="{% url 'services' %}">Services</a></li>
-								<li><a href="{% url 'products' %}">Products</a></li>
-								<li><a href="{% url 'packages' %}">Packages</a></li>
-								<li><a href="{% url 'contact' %}">Contact</a></li>
-							</ul>
-							
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li><a href="{% url 'services' %}">Services</a></li>
+                                <li><a href="{% url 'products' %}">Products</a></li>
+                                <li><a href="{% url 'packages' %}">Packages</a></li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                            
 						</div>
 
 						<div class="col-md-3">
