@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ColonHash &mdash;</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="free html5, software, web development, html5, css3, app development, responsive" />
+	<meta name="author" content="colonhash.com" />
+
+  	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+    {% load static %}
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif] -->
+    <script src="{% static 'js/respond.min.js' %}"></script>
+	
+	</head>
+	<body>
+<style>
+    .main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.d1 {
+  position: absolute;
+  background-image: url({% static 'images/colonhash.png' %});
+  background-size: 100%;
+
+  height: 30vh;
+  width: 15vw;
+
+  background-position: 0 50%;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  animation: dd1 5s 1, dd12 10s 1;
+  animation-delay: 2s, 14s;
+}
+.d5 {
+  position: absolute;
+  background-image: url({% static 'images/colonhash2.png' %});
+  background-size: 100%;
+  /* background-repeat:no-repeat; */
+
+  height: 30vh;
+  width: 15vw;
+
+  background-position: 0 50%;
+
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  animation: dd1 5s 1, dd12 10s 1;
+  animation-delay: 1s;
+}
+.d2 {
+  position: absolute;
+  background-image: url({% static 'images/colonhash.png' %});
+  background-size: 2700px 1500px;
+
+  height: 50vh;
+  width: 25vw;
+
+  background-position: -10vw 50%;
+  left: 10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd2 10s 2;
+  animation-delay: 4s;
+}
+.d6 {
+  position: absolute;
+  background-image: url({% static 'images/colonhash.png' %});
+  background-size: 100%;
+  background-repeat:no-repeat;  
+  height: 50vh;
+  width: 30vw;
+
+  background-position: 0vw 50%;
+  left: 10vw;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd1 5s 1, dd12 10s 1;
+  animation-delay: 4s;
+}
+.d3 {
+  position: absolute;
+  background-image: url({% static 'images/colonhash.png' %});
+  background-size: 2700px 1500px;
+  background-repeat:no-repeat;
+  overflow: hidden;
+
+  height: 100vh;
+  width: 40vw;
+  left: 25vw;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8);
+  background-position: -35vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  animation: dd3 10s 2;
+  animation-delay: 4s;
+}
+.d4 {
+  position: absolute;
+  overflow: hidden;
+  background-image: url({% static 'images/slide_1.jpg' %});
+  background-size: 2700px 1500px;
+
+  height: 80vh;
+  width: 25vw;
+  left: 60vw;
+  background-position: -70vw 50%;
+
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  animation: dd4 10s 2;
+  animation-delay: 4s;
+}
+
+@keyframes dd1 {
+  0% {
+  }
+  50% {
+    width: 95vw;
+  }
+}
+@keyframes dd12 {
+  0% {
+  }
+  50% {
+    background-position: Calc(0vw - 40px) 50%;
+  }
+}
+@keyframes dd2 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-10vw - 40px) 50%;
+  }
+}
+@keyframes dd3 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-35vw - 40px) 50%;
+  }
+}
+@keyframes dd4 {
+  0% {
+  }
+  50% {
+    background-position: Calc(-70vw - 40px) 50%;
+  }
+}
+.butt:hover{
+	background-color: blue;
+	color:white;
+}
+</style>
+
+
+
+
+	<nav id="fh5co-main-nav" role="navigation">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+		<div class="js-fullheight fh5co-table">
+			<div class="fh5co-table-cell js-fullheight">
+				<h1 class="text-center"><a class="fh5co-logo" href="{% url 'index' %}">ColonHash</a></h1>
+				<ul>
+					<li><a href="{% url 'index' %}">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Packages</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<p class="fh5co-social-icon">
+					<a href="#"><i class="icon-twitter2"></i></a>
+					<a href="#"><i class="icon-facebook2"></i></a>
+					<a href="#"><i class="icon-instagram"></i></a>
+					<a href="#"><i class="icon-dribbble2"></i></a>
+					<a href="#"><i class="icon-youtube"></i></a>
+				</p>
+			</div>
+		</div>
+	</nav>
+	
+	<div id="fh5co-page">
+		<header>
+			<div class="container">
+				<div class="fh5co-navbar-brand">
+					<div class="row">
+						<div class="col-xs-6">
+							<h1 class="text-left"><a class="fh5co-logo" href="{$ static 'index' %}"><span>Welcome to</span> ColonHash <span></span></a></h1>
+						</div>
+						<div class="col-xs-6">
+							<p class="fh5co-social-icon text-right">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+						</div>
+					</div>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+				</div>
+			</div>
+		</header>
+		<aside id="fh5co-hero" class="js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+                   <li style="background-image: url({% static 'images/slide_1.jpg' %});">
+                    <!-- <div class="main"> -->
+                        <div style='text-align: center; font-size: 30px;color:white' class="d1"></div>
+                        <div class="d2"></div>
+                        <!-- </div> -->
+			   		<div class="overlay-gradient"></div>
+			   		<div class="container">
+			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<div class="desc">
+			   						<span>Power by Enthusiasm & Driven with Passion</span><br/>
+			   						<h2>Welcome to ColonHash!</h2>
+			   						<p>We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
+			   					</div>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url({% static 'images/slide_2.jpg' %});">
+                    <div style='text-align: center; font-size: 30px;color:white' class="d5"></div>
+                        <div class="d2"></div>   
+                    <div class="overlay-gradient"></div>
+			   		<div class="container">
+			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<div class="desc">
+			   						<span>Power by Enthusiasm & Driven with Passion</span>
+				   					<h2>Our values are our strength</h2>
+				   					<p>We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
+
+				   				</div>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			   	<li style="background-image: url({% static 'images/slide_3.jpg' %});">
+                    <div class="d6"></div>   
+                    <div class="overlay-gradient"></div>
+			   		<div class="container">
+			   			<div class="col-md-8 col-md-offset-2 col-md-push-4 js-fullheight slider-text">
+			   				<div class="slider-text-inner">
+			   					<div class="desc">
+			   						<span>Power by Enthusiasm & Driven with Passion</span>
+				   					<h2>Make Your Business Digital</h2>
+				   					<p>We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
+				   				</div>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="fh5co-intro-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 animate-box text-center">
+						<h2 class="intro-heading">We named it ColonHash!</h2>
+						<p><span>Bringing ideas to life <i class="icon-heart3"></i> </span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-featured">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="post-entry">
+						<div class="col-md-6 col-md-push-6 nopaddingbottom animate-box">
+							<div class="post-image" style="background-image: url({% static 'images/about.png' %});"></div>
+						</div>
+						<div class="col-md-6 col-md-pull-5 animate-box">
+							<div class="display-tc">
+								<div class="desc">
+									<span class="date">About us</span>
+									<h3>We are ColonHash!</h3><span class="date">Where you find perfect software solutions for your needs.</span>
+                                    <p>Colonhash, software development company based in Finland founded in Januarary, 2020. Carrying a motive to present our best services to entrepreneurs, startups, SMEs & Co-operates and providing ease to their businesses with our expertise. We possess a highly professional team with a vast domain network providing our clients single window operation facility internationally.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+{% block services %}
+		<div id="fh5co-about" >
+			<div class="container" >
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>What We Offer</h2>
+						<p>We have a motive to offer the best services!</p>
+					</div>
+				</div>
+				<div class="row">
+					{% for service in services %}
+					<div class="col-sm-3 animate-box" data-animate-effect="fadeIn">
+						<div class="fh5co-staff">
+							<img class="img-responsive" src="{{ service.picture.url }}" alt="ColonHash">
+							<h3>{{ service.name }}</h3>
+							<strong class="role">{{ service.included }}</strong>
+							<p><a ><button style='background-color: #00008b;color:white;' >Hire us</button></a>  <a ><button style='background-color: #00008b;color:white;' >Details</button></a></p>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		{% endblock services %}
+		<div id="fh5co-blog" class="fh5co-bg-section">
+			<div class="container">
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Products and Packages</h2>
+						<p>We offer the best quality Products and softwares that boosts your business!</p>
+					</div>
+				</div>
+				<div class="row">
+					{% for product in products %}
+					<div class="col-md-4">
+						<div class="fh5co-blog animate-box">
+							<a href="#"><img class="img-responsive" src="{{ product.picture.url }}" alt=""></a>
+							<div class="blog-text">
+								<span class="posted_on">PRICE: {{ product.Pricing }}</span>
+								<span class="comment"><a href="">21<i class="icon-bubble"></i></a></span>
+								<h3><a href="#">{{ product.name }}</a></h3>
+								<p>{{ product.description }}</p>
+								<p><a ><button style='background-color: #00008b;color:white;' >Order Now!</button></a>  <a ><button style='background-color: #00008b;color:white;' >Demo</button></a></p>
+							</div> 
+						</div>
+					</div>
+					{% endfor %}
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="fh5co-work-section" style="background-image: url({% static 'images/back.png' %});background-repeat:no-repeat">
+			<div class="container" >
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Packages</h2>
+						<p></p>
+					</div>
+				</div>
+				<div class="row">
+					{% for package in packages %}
+					<div class="col-md-4 text-center animate-box">
+						<div class="work" style="background-image: url({{ package.picture.url }});">
+							<a href="#" class="view">
+								<span>{{ package.name }}</span>
+								<span>{{ package.Pricing }}</span>
+								<span>Buy Now</span>
+							</a>
+						</div>
+					</div>
+					{% endfor %}
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="fh5co-counters" style="background-image: url({% static 'images/bg.jpeg' %});" data-stellar-background-ratio="0.5" id="counter-animate">
+			<div class="fh5co-narrow-content animate-box">
+				<div class="row" >
+					<div class="col-md-4 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="7520" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Project</span>
+					</div>
+					<div class="col-md-4 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="5450" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Clients</span>
+					</div>
+					<div class="col-md-4 text-center">
+						<span class="fh5co-counter js-counter" data-from="0" data-to="6876" data-speed="5000" data-refresh-interval="50"></span>
+						<span class="fh5co-counter-label">Satisfied Client</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fh5co-counters" style="background-image: url({% static 'images/bg.jpeg' %});" data-stellar-background-ratio="0.5" id="counter-animate">
+			<div class="fh5co-narrow-content animate-box">
+				<div class="row" >
+					
+					<div class="col-md-4 text-center">
+						<h2 style='color:white'>Interested in us? </h2>
+					</div>
+					<div class="col-md-4 text-center">
+						<h2><a ><button>Contact us</button></a></h2>
+					</div>
+					<div class="col-md-4 text-center">
+						<h2 style='color:white'>Let's discuss a Project! </h2>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="section-title">About ColonHash!</h3>
+							<p>WHERE YOU FIND PERFECT SOFTWARE SOLUTIONS FOR YOUR NEEDS</p>
+						</div>
+						
+						<div class="col-md-3 col-md-push-1">
+							<h3 class="section-title">Links</h3>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Products and Packages</a></li>
+								<li><a href="#">FAQ / Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-3">
+							<h3 class="section-title">Information</h3>
+							<ul>
+								<li><a href="#">Terms &amp; Condition</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Privacy &amp; Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<h3 class="section-title">We Named it ColonHash!</h3>
+							<p>Get your business, Digital Footprint</p>
+							<form class="form-inline" id="fh5co-header-subscribe">
+								<div class="row">
+									<div class="col-md-12 col-md-offset-0">
+										<div class="form-group">
+										<i class="icon-paper-plane"> Eestinlaakso 11 B 02280 Espoo</i>
+										<br/>
+										<i class="icon-phone"> +358 45 2545477</i>
+											
+									</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icon">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright <a href="#">ColonHash</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="#" >ColonHash</a> </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<!-- Counters -->
+	<script src="{% static 'js/jquery.countTo.js' %}"></script>
+	<!-- Flexslider -->
+	<script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
+
