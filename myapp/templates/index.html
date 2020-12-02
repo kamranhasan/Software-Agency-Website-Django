@@ -406,7 +406,7 @@
 				<div class="row">
 					{% for package in packages %}
 					<div class="col-md-4 text-center animate-box">
-						<div class="work" style="background-image: url({{ package.picture.url }});">
+						<div class="work" style="background-image: url({{ package.picture.url }});background-size:contain;">
 							<a href="{% url 'packagedetail' package.id %}" class="view">
 								<span>{{ package.name }}</span>
 								<span>{{ package.Pricing }}</span>
