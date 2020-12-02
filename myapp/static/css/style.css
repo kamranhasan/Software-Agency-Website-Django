@@ -1,4 +1,5 @@
 @font-face {
+  /* font-family: 'Raleway', sans-serif; */
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -11,7 +12,9 @@
 *	Edit this section
 *
 * ======================================================= */
+
 body {
+  /* font-family: 'Raleway', sans-serif; */
   font-family: "Karla", Arial, sans-serif;
   line-height: 1.8;
   font-size: 20px;
@@ -57,6 +60,7 @@ p, span {
   font-size: 18px;
   color: #727272;
   font-weight: 300;
+  /* font-family: 'Raleway', sans-serif; */
   font-family: "Karla", Arial, sans-serif;
 }
 
@@ -67,6 +71,7 @@ span {
 
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
+  /* font-family: 'Raleway', sans-serif; */
   font-family: "Playfair Display", Arial, serif;
   font-weight: 300;
   margin: 0 0 30px 0;
@@ -205,6 +210,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
   display: inline-block;
+  /* font-family: 'Raleway', sans-serif; */
   font-family: "Playfair Display", Arial, serif;
 }
 #fh5co-main-nav ul li a {
@@ -448,6 +454,7 @@ header .fh5co-navbar-brand {
 header .fh5co-navbar-brand h1 {
   width: 20%;
   display: block;
+  /* font-family: 'Raleway', sans-serif; */
   font-family: "Playfair Display", Arial, serif;
   margin-bottom: 0;
 }
@@ -933,6 +940,7 @@ header .fh5co-navbar-brand .fh5co-social-icon a {
   font-size: 60px;
   display: block;
   color: #fff;
+  /* font-family: 'Raleway', sans-serif; */
   font-family: "Karla", Arial, sans-serif;
   width: 100%;
   font-weight: 700;
